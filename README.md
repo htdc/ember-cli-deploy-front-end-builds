@@ -15,9 +15,9 @@ pack](https://github.com/tedconf/ember-cli-deploy-front-end-builds-pack).
 
 ## Compatibility
 
-* Ember.js v3.24 or above
-* Ember CLI v3.24 or above
-* Node.js v12 or above
+- Ember.js v3.24 or above
+- Ember CLI v3.24 or above
+- Node.js v14 or above
 
 ## Installation
 
@@ -35,10 +35,10 @@ pack](https://github.com/tedconf/ember-cli-deploy-front-end-builds-pack).
 ```javascript
 // config/deploy.js
 
-ENV["front-end-builds"] = {
-  app: "my-blog",
-  endpoint: "http://www.ted.com",
-  privateKey: process.env.FEB_DEPLOY_KEY
+ENV['front-end-builds'] = {
+  app: 'my-blog',
+  endpoint: 'http://www.ted.com',
+  privateKey: process.env.FEB_DEPLOY_KEY,
 };
 ```
 
