@@ -30,7 +30,7 @@
     "core-object": "^3.1.5",
     "ember-cli-babel": "^7.26.10",
     "ember-cli-htmlbars": "^5.7.2",
-    "passwd-user": "^1.2.1",
+    "passwd-user": "^3.0.0",
     "request": "^2.88.2"
   },
   "devDependencies": {

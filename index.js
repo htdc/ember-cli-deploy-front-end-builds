@@ -8,7 +8,7 @@ module.exports = {
   name: require('./package').name,
 
   createDeployPlugin(options) {
-    const homedir = passwdUser.sync(process.getuid()).homedir;
+    const homedir = passwdUser.sync(process.getuid()).homeDirectory;
     const DeployPlugin = BasePlugin.extend({
       name: options.name,
 
