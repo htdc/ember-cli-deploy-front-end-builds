@@ -4671,13 +4671,6 @@ ember-maybe-import-regenerator@^1.0.0:
     ember-cli-babel "^7.26.6"
     regenerator-runtime "^0.13.2"
 
-ember-page-title@^6.2.2:
-  version "6.2.2"
-  resolved "https://registry.yarnpkg.com/ember-page-title/-/ember-page-title-6.2.2.tgz#980838c44e96cba1d00f42435d707936af627324"
-  integrity sha512-YTXA+cylZrh9zO0zwjlaAGReT2MVOxAMnVO1OOygFrs1JBs4D6CKV3tImoilg3AvIXFBeJfFNNUbJOdRd9IGGg==
-  dependencies:
-    ember-cli-babel "^7.23.1"
-
 ember-qunit@^5.1.5:
   version "5.1.5"
   resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-5.1.5.tgz#24a7850f052be24189ff597dfc31b923e684c444"
