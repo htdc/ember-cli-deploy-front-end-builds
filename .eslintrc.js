@@ -33,6 +33,7 @@ module.exports = {
         './blueprints/*/index.js',
         './config/**/*.js',
         './tests/dummy/config/**/*.js',
+        './lib/**/*.js',
       ],
       parserOptions: {
         sourceType: 'script',
@@ -43,6 +44,9 @@ module.exports = {
       },
       plugins: ['node'],
       extends: ['plugin:node/recommended'],
+      rules: {
+        'node/no-unpublished-require': 'off',
+      },
     },
     {
       // Test files:

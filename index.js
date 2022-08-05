@@ -12,11 +12,13 @@ module.exports = {
     const DeployPlugin = BasePlugin.extend({
       name: options.name,
 
+      // eslint-disable-next-line ember/avoid-leaking-state-in-ember-objects
       defaultConfig: {
         privateKey: homedir + '/.ssh/id_rsa',
         requestOptions: {},
       },
 
+      // eslint-disable-next-line ember/avoid-leaking-state-in-ember-objects
       requiredConfig: ['app', 'endpoint'],
 
       didUpload(context) {
