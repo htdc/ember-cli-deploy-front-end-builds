@@ -8,7 +8,7 @@ var FrontEndBuildsNotifier = require('./lib/front-end-builds-notifier');
 module.exports = {
   name: require('./package').name,
 
-  createDeployPlugin: function(options) {
+  createDeployPlugin: function (options) {
     var homedir = passwdUser.sync(process.getuid()).homedir;
 
     var DeployPlugin = BasePlugin.extend({
@@ -16,21 +16,21 @@ module.exports = {
 
       defaultConfig: {
         privateKey: homedir + '/.ssh/id_rsa',
-        requestOptions: {}
+        requestOptions: {},
       },
 
       requiredConfig: ['app', 'endpoint'],
 
-      didUpload: function(context) {
+      didUpload: function (context) {
         var notifier = new FrontEndBuildsNotifier({
           plugin: this,
-          context: context
+          context: context,
         });
 
         return notifier.notify();
-      }
+      },
     });
 
     return new DeployPlugin();
-  }
+  },
 };
