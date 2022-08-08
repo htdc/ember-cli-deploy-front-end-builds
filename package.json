@@ -72,7 +72,8 @@
   "resolutions": {
     "ansi-html": "^0.0.9",
     "markdown-it": "^13",
-    "chokidar": "^3"
+    "chokidar": "^3",
+    "minimist": "^1"
   },
   "engines": {
     "node": "14.* || >= 16"
