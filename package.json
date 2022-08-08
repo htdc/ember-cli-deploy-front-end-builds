@@ -30,8 +30,8 @@
     "core-object": "^3.1.5",
     "ember-cli-babel": "^7.26.11",
     "ember-cli-htmlbars": "^6.1.0",
-    "passwd-user": "^3.0.0",
-    "request": "^2.88.2"
+    "node-fetch": "^2",
+    "passwd-user": "^3.0.0"
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
