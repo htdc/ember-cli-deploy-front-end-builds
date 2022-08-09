@@ -6,29 +6,14 @@ pack](https://github.com/tedconf/ember-cli-deploy-front-end-builds-pack).
 
 ## Configuration
 
-| Property         | Type     | Required | Example              | Notes                                                                                  |
-| ---------------- | -------- | -------- | -------------------- | -------------------------------------------------------------------------------------- |
-| `app`            | `string` | Yes      | `my-blog`            | The name of your application on the front end builds server.                           |
-| `endpoint`       | `string` | Yes      | `http://www.ted.com` | The hostname where you front end builds server lives.                                  |
-| `privateKey`     | `string` | No       | `/home/me/feb.key`   | The path to the private key used to sign your builds.                                  |
-| `requestOptions` | `object` | No       | `{}`                 | Additional params to pass to the [request](https://github.com/request/request) object. |
-
-## Compatibility
-
-- Ember.js v3.24 or above
-- Ember CLI v3.24 or above
-- Node.js v14 or above
-
-## Installation
-
 `config/deploy.js` has the following options.
 
-| Property         | Type     | Required | Example              | Notes                                                                                  |
-| ---------------- | -------- | -------- | -------------------- | -------------------------------------------------------------------------------------- |
-| `app`            | `string` | Yes      | `my-blog`            | The name of your application on the front end builds server.                           |
-| `endpoint`       | `string` | Yes      | `http://www.ted.com` | The hostname where you front end builds server lives.                                  |
-| `privateKey`     | `string` | No       | `/home/me/feb.key`   | The path to the private key used to sign your builds.                                  |
-| `requestOptions` | `object` | No       | `{}`                 | Additional params to pass to the [request](https://github.com/request/request) object. |
+| Property         | Type     | Required | Example              | Notes                                                                                                   |
+| ---------------- | -------- | -------- | -------------------- | ------------------------------------------------------------------------------------------------------- |
+| `app`            | `string` | Yes      | `my-blog`            | The name of your application on the front end builds server.                                            |
+| `endpoint`       | `string` | Yes      | `http://www.ted.com` | The hostname where you front end builds server lives.                                                   |
+| `privateKey`     | `string` | No       | `/home/me/feb.key`   | The path to the private key used to sign your builds.                                                   |
+| `requestOptions` | `object` | No       | `{}`                 | Additional params to pass to the [node-fetch](https://github.com/node-fetch/node-fetch) options object. |
 
 ### Example config
 
