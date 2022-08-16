@@ -1,36 +1,36 @@
 'use strict';
 
-var BasePlugin = require('ember-cli-deploy-plugin');
-var passwdUser = require('passwd-user');
-
-var FrontEndBuildsNotifier = require('./lib/front-end-builds-notifier');
+const BasePlugin = require('ember-cli-deploy-plugin');
+const passwdUser = require('passwd-user');
+const FrontEndBuildsNotifier = require('./lib/front-end-builds-notifier');
 
 module.exports = {
   name: require('./package').name,
 
-  createDeployPlugin: function(options) {
-    var homedir = passwdUser.sync(process.getuid()).homedir;
-
-    var DeployPlugin = BasePlugin.extend({
+  createDeployPlugin(options) {
+    const homedir = passwdUser.sync(process.getuid()).homeDirectory;
+    const DeployPlugin = BasePlugin.extend({
       name: options.name,
 
+      // eslint-disable-next-line ember/avoid-leaking-state-in-ember-objects
       defaultConfig: {
         privateKey: homedir + '/.ssh/id_rsa',
-        requestOptions: {}
+        requestOptions: {},
       },
 
+      // eslint-disable-next-line ember/avoid-leaking-state-in-ember-objects
       requiredConfig: ['app', 'endpoint'],
 
-      didUpload: function(context) {
-        var notifier = new FrontEndBuildsNotifier({
+      didUpload(context) {
+        const notifier = new FrontEndBuildsNotifier({
           plugin: this,
-          context: context
+          context,
         });
 
         return notifier.notify();
-      }
+      },
     });
 
     return new DeployPlugin();
-  }
+  },
 };
