@@ -76,12 +76,6 @@
     "stylelint-prettier": "^4.1.0",
     "webpack": "^5.90.3"
   },
-  "resolutions": {
-    "ansi-html": "^0.0.9",
-    "markdown-it": "^13",
-    "chokidar": "^3",
-    "minimist": "^1"
-  },
   "peerDependencies": {
     "ember-source": ">= 4.0.0"
   },
