@@ -20,9 +20,9 @@ pack](https://github.com/tedconf/ember-cli-deploy-front-end-builds-pack).
 ```javascript
 // config/deploy.js
 
-ENV['front-end-builds'] = {
-  app: 'my-blog',
-  endpoint: 'http://www.ted.com',
+ENV["front-end-builds"] = {
+  app: "my-blog",
+  endpoint: "http://www.ted.com",
   privateKey: process.env.FEB_DEPLOY_KEY,
 };
 ```
