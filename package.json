@@ -85,6 +85,9 @@
   "ember": {
     "edition": "octane"
   },
+  "resolutions": {
+    "json5": ">=1.0.2"
+  },
   "ember-addon": {
     "configPath": "tests/dummy/config"
   }
