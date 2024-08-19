@@ -87,5 +87,8 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  }
+  },
+  "resolutions": {
+  "ansi-html": "0.0.8"
+}
 }
