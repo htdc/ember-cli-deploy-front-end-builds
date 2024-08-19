@@ -89,6 +89,6 @@
     "configPath": "tests/dummy/config"
   },
   "resolutions": {
-  "ansi-html": "0.0.8"
-}
+    "ansi-html": "0.0.8"
+  }
 }
