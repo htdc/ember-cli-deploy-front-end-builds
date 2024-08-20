@@ -91,6 +91,7 @@
   "resolutions": {
     "ansi-html": "0.0.8",
     "ember-cli-dependency-checker/find-yarn-workspace-root": "^2.0.0",
-    "sane": "^5.0.1"
+    "sane": "^5.0.1",
+    "ember-try/ember-try-config/package-json": "^7.0.0"
   }
 }
