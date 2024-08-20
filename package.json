@@ -89,6 +89,8 @@
     "configPath": "tests/dummy/config"
   },
   "resolutions": {
-    "ansi-html": "0.0.8"
+    "ansi-html": "0.0.8",
+    "ember-cli-dependency-checker/find-yarn-workspace-root": "^2.0.0",
+    "sane": "^5.0.1"
   }
 }
