@@ -33,8 +33,7 @@
     "core-object": "^3.1.5",
     "ember-cli-babel": "^8.2.0",
     "ember-cli-htmlbars": "^6.3.0",
-    "node-fetch": "^2",
-    "passwd-user": "^4.0.0"
+    "node-fetch": "^2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.7",

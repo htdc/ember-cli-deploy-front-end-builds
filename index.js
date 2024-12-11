@@ -1,14 +1,14 @@
 'use strict';
 
 const BasePlugin = require('ember-cli-deploy-plugin');
-const passwdUser = require('passwd-user');
+const os = require('os');
 const FrontEndBuildsNotifier = require('./lib/front-end-builds-notifier');
 
 module.exports = {
   name: require('./package').name,
 
   createDeployPlugin(options) {
-    const homedir = passwdUser.sync(process.getuid()).homeDirectory;
+    const homedir = os.homedir();
     const DeployPlugin = BasePlugin.extend({
       name: options.name,
 
