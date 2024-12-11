@@ -34,7 +34,7 @@
     "ember-cli-babel": "^8.2.0",
     "ember-cli-htmlbars": "^6.3.0",
     "node-fetch": "^2",
-    "passwd-user": "^3.0.0"
+    "passwd-user": "^4.0.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.7",
