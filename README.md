@@ -4,6 +4,10 @@ If you are deploying an Ember.JS application to a front end builds
 server then you should probably check out the [Front end builds
 pack](https://github.com/tedconf/ember-cli-deploy-front-end-builds-pack).
 
+## Support
+
+- The addon can only be used by applications on Ember 5.12 or above.
+
 ## Configuration
 
 `config/deploy.js` has the following options.
