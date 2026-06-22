@@ -19,13 +19,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - run: corepack enable
       - name: Install Node
         uses: actions/setup-node@v3
         with:
           node-version: 20
           cache: yarn
       - name: Install Dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable
       - name: Lint
         run: yarn lint
       - name: Run Tests
@@ -38,12 +39,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - run: corepack enable
       - uses: actions/setup-node@v3
         with:
           node-version: 20
           cache: yarn
       - name: Install Dependencies
-        run: yarn install --no-lockfile
+        run: yarn install --no-immutable
       - name: Run Tests
         run: yarn test:ember
 
@@ -67,12 +69,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - run: corepack enable
       - name: Install Node
         uses: actions/setup-node@v3
         with:
           node-version: 20
           cache: yarn
       - name: Install Dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable
       - name: Run Tests
         run: ./node_modules/.bin/ember try:one ${{ matrix.try-scenario }}
